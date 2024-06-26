@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github User Finder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <i class="fa fa-github github-icon" style="font-size:200px"></i>
+    <div class="search-container">
+        <input id="userinput" type="text" placeholder="Username..">
+        <button onclick="getUserDetails()" type="submit" id="search-button "class="search-button">Search</button>
+    </div>
+    <div class="userdata" id="userdata">
+        <div class="user-card" id="user-card">
+            <div class="user-info">
+                <img src="https://via.placeholder.com/70" alt="User Image" class="user-image">
+                <div class="user-details">
+                    <div class="user-name"><strong>(-------)</strong></div>
+                    <div class="user-bio"><strong>(----------)</strong></div>
+                    <div class="user-github">
+                        <a href="https://github.com/username" target="_blank"><strong>GitHub Profile</strong></a>
+                    </div>
+                </div>
+            </div>
+            <div class="user-stats">
+                <div class="stat-box">
+                    <span class="value">523</span>
+                    <span class="parameter">Followers</span>
+                </div>
+                <div class="stat-box">
+                    <span class="value">1387</span>
+                    <span class="parameter">Repos</span>
+                </div>
+                <div class="stat-box">
+                    <span class="value">146</span>
+                    <span class="parameter">Following</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
